@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+    color: #404040;
+}
+
+body {
+    background-color: #333;
+}
+
+
+
+
+h2 {
+    font-size: 2.3rem;
+    font-weight: 100;
+    text-decoration: underline;
+    text-transform: uppercase;
+    padding-bottom: 5%;
+  
+}
+
+
+.expense-p {
+    color:rgb(177, 3, 3);
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.income-p {
+    color:rgb(1, 105, 1);
+    font-size: 1.2rem;
+    font-weight: 400;
+    
+}
+
+
+
+/* för att få det att se ut som ett nyhetsbrev som ser bra ut på stora skärmar
+max-width är 900px sen går den över till 80% av sidan */
+
+.wrapper {
+    width: 80%;
+    max-width: 900px;
+    margin: auto;
+    background-color:#f7f7f7;
+}
+
+.background-container {
+   height:75vh;
+   /* background-image: url("/images/background_big.jpg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover; */
+
+}
+
+/*för total presentationen*/
+
+.result_container {
+    background-image: url("images/header-big.jpg");
+    background-position:center;
+    background-size:cover;
+    display:flex;
+    justify-content: center;
+    padding:10%;
+    margin-bottom: 1px;
+    border:1px solid black;
+    
+}
+
+.total {
+    display:flex;
+    flex-direction: column;
+}
+
+#total_result {
+    text-align: center;
+    
+}
+
+#h1_total {
+font-size: 4rem;
+font-weight: 900;
+letter-spacing: 0.2rem;
+text-transform: uppercase;
+color:whitesmoke;
+text-shadow: 1px 1px 1px black,
+2px 3px 1px black;}
+
+#total_result {
+font-size: 3.3rem;
+color:whitesmoke;
+text-shadow: 1px 1px 1px black,
+2px 3px 1px black;}
+
+/* add value container and inputs */
+
+.add_value_container {
+    padding:3%;
+    display:flex;
+    justify-content: space-around;
+    background-color:#f7f7f7;
+
+}
+
+#add_select {
+    border: 1px solid #e7e7e7;
+    background-color: #fff;
+    text-align: center;
+    font-size: 1.4rem;
+    width:10%;
+    height:2rem;
+}
+
+#add_text {
+    border: 1px solid #e7e7e7;
+    background-color: #fff;
+    padding-left: 1%;
+    width:40%;
+    height:2rem;
+    
+}
+
+#add_amount {
+    border: 1px solid #e7e7e7;
+    background-color: #fff;
+    padding-left: 1%;
+    width:30%;
+    height:2rem;
+}
+
+/* För att ta bort styling på "add_amount"-fältet */
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* submit och delete knappen */
+
+.submit_delete_value {
+    padding-bottom: 2%;
+    display:flex;
+    justify-content: center;
+    background-color:#f7f7f7;
+}
+
+
+ #submit {
+    color: #404040 !important;
+    text-transform: uppercase;
+    background: #f7f7f7;
+    padding: 12px;
+    margin-right: 1%;
+    border: 2px solid #757575 !important;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+    }
+
+#submit:hover {
+    color: #494949 !important;
+    border-radius: 0px;
+    border-color: #000000 !important;
+    transition: all 0.3s ease 0s;
+    }
+
+#delete {
+    color: #404040 !important;
+    text-transform: uppercase;
+    background: #f7f7f7;
+    padding: 12px;
+    margin-left:1%;
+    border: 2px solid #757575 !important;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+    }
+
+#delete:hover {
+    color: #494949 !important;
+    border-radius: 0px;
+    border-color: #000000 !important;
+    transition: all 0.3s ease 0s;
+    }
+
+
+/* inkomster och utgifter divar */
+
+
+.income_expenses {
+    position:relative;
+    display:flex;
+    overflow:scroll;
+    overflow-y: auto;
+    overflow-x: hidden;
+    justify-content: space-around;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+    height: 45vh;
+}
+
+
+
+
+
+
+/* footer med income total och expense total */
+
+footer {
+    display:flex;
+    justify-content: space-around;
+   
+}
+
+
+#income_total {
+    font-size: 1.1rem;
+    font-weight: 400;
+    letter-spacing: 0.15rem;
+}
+
+#expense_total {
+    font-size: 1.1rem;
+    font-weight: 400;
+    letter-spacing: 0.15rem; 
+}
+
+
+/* Media queries för att få sidan responsive */
+
+
+
+@media screen and (max-width: 780px) {
+    h2 {
+        font-size: 1.6rem;
+    }
+    #h1_total {
+        font-size:2rem;
+    }
+
+    .expense-p , .income-p {
+        font-size: 0.9rem;
+    }
+
+    #expense_total {
+        font-size: 0.9rem;
+    } 
+    
+    #income_total {
+        font-size: 0.9rem;
+    }
+
+
+}
+
+@media screen and (max-width: 430px) {
+    #h1_total {
+        font-size:1.5rem;
+    }
+}

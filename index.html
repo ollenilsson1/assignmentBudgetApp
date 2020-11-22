@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olles budget-app</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="app.js" defer> </script>
+</head>
+<body>
+    <div class="wrapper">
+        
+
+        <!--- Div för att presentera totalen -->
+
+        <div class="result_container">
+                
+
+            <div class="total">
+                <h1 id="h1_total">Total budget</h1>
+                <div id="total_result">
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <!-- Lägg till beskrivning och värde -->
+
+    <div class="background-container">
+
+
+        <div class="add_value">
+            <div class="add_value_container">
+                <select id="add_select">
+                    <option value="+" value="income" selected>+</option>
+                    <option value="-" value="expenses">-</option>
+                </select>
+                <input id="add_text" type="text" placeholder="Beskrivning av utgift/inkomst">
+                <input id="add_amount" type="number" placeholder="Värde">
+            </div>
+        
+            <!-- Lägg till eller rensa knappar -->
+
+            <div class="submit_delete_value">
+                <button id="submit">Lägg till</button>
+                <button id="delete">Rensa</button>
+            </div>
+        </div>    
+
+            <!-- container för inkomster och Utgifter -->
+
+    
+
+        <div class="income_expenses">
+                <!-- div för inkomster -->
+                
+            <div id="income">
+                <h2 class="income_h2">Inkomster</h2>
+                <ul class="list">
+                    
+
+                </ul>
+                
+            </div>
+                
+                
+                <!-- div för utgifter -->
+
+            <div id="expense">
+                <h2 class="expense_h2">Utgifter</h2>
+                <ul class="list">
+                    
+
+                </ul>
+                
+            </div>
+ 
+        </div>
+
+        <footer>
+            <div class="footer_left">
+            <h3 class="footer_h3">Totala inkomster</h3>
+            <div id="income_total"></div>
+            </div>
+
+
+
+            <div class="footer_right">
+            <h3 class="footer_h3">Totala utgifter</h3>
+            <div id="expense_total"></div>
+            </div>
+
+        </footer>
+    </div>
+          
+    </div>
+    
+</body>
+</html>
