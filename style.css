@@ -176,7 +176,7 @@ input[type=number] {
     transition: all 0.3s ease 0s;
     }
 
-#delete {
+#deleteAll {
     color: #404040 !important;
     text-transform: uppercase;
     background: #f7f7f7;
@@ -188,7 +188,7 @@ input[type=number] {
     transition: all 0.3s ease 0s;
     }
 
-#delete:hover {
+#deleteAll:hover {
     color: #494949 !important;
     border-radius: 0px;
     border-color: #000000 !important;
@@ -209,6 +209,25 @@ input[type=number] {
     border-top: 1px solid #e7e7e7;
     border-bottom: 1px solid #e7e7e7;
     height: 45vh;
+}
+
+
+.income , .expense {
+    position:relative;   
+}
+
+#edit {
+    position: absolute;
+    top:0;
+    right:3%;
+
+}
+
+#delete {
+    position: absolute;
+    top:0;
+    right:15%;
+    
 }
 
 

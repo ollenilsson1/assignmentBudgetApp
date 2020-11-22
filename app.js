@@ -76,7 +76,6 @@ function deleteOrEdit(event){
     }else if (targetBtn.id == EDIT ){
         editEntry(entry);
     }
-    
 }
 
 function deleteEntry(entry){
@@ -96,7 +95,6 @@ function editEntry(entry){
     }
 
     deleteEntry(entry);
-    console.log(ENTRY.amount);
 }
 
 
@@ -141,8 +139,8 @@ function showEntry(list, type, title, amount, id) {
 
     const entry =  ` <li id = "${id}" class="${type}">
                      <div class="entry">${title}: ${amount}</div>
-                     <div id="edit">Edit</div>
-                     <div id="delete">Delete</div>
+                     <i id="edit" class="far fa-edit"></i>
+                     <i id="delete" class="fas fa-trash-alt"></i>
 
 
                     </li> `;
