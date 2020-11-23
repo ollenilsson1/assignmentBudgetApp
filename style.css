@@ -50,11 +50,7 @@ max-width är 900px sen går den över till 80% av sidan */
 }
 
 .background-container {
-   height:75vh;
-   /* background-image: url("/images/background_big.jpg");
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover; */
+   height:70vh;
 
 }
 
@@ -210,7 +206,9 @@ input[type=number] {
     border-bottom: 1px solid #e7e7e7;
     height: 45vh;
 }
-
+.list {
+    list-style-type: none;
+}
 
 .income , .expense {
     position:relative;   
@@ -281,11 +279,41 @@ footer {
         font-size: 0.9rem;
     }
 
+    #edit {
+        position: absolute;
+        top:0;
+        right:0%;
+    
+    }
+    
+    #delete {
+        position: absolute;
+        top:0;
+        right:16%;
+        
+    }
+
+    .background-container {
+        height:65vh;
+     
+    }
+
+    
+
 
 }
 
 @media screen and (max-width: 430px) {
     #h1_total {
         font-size:1.5rem;
+    }
+
+    #add_select {
+        width:15%;
+    }
+
+    .background-container {
+        height:70vh;
+     
     }
 }

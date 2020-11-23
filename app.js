@@ -24,7 +24,7 @@ const DELETE = "delete", EDIT = "edit";
 ENTRY_LIST = JSON.parse(localStorage.getItem("entry_list")) || [];
 updateUI();
 
-// eventlistner för income och expense list
+// eventlistner för income och expense list och addBtn
 
 incomeList.addEventListener("click" , deleteOrEdit);
 expenseList.addEventListener("click" , deleteOrEdit);
@@ -65,6 +65,7 @@ function budget(){
 
 }
 
+//DeleteOrEdit function som väljer parentnode till knappen som klickas på
 
 function deleteOrEdit(event){
     const targetBtn = event.target;
@@ -78,10 +79,14 @@ function deleteOrEdit(event){
     }
 }
 
+//Delete som tar bort element id från arrayen och uppdaterar UI
+
 function deleteEntry(entry){
     ENTRY_LIST.splice( entry.id, 1);
     updateUI();
 }
+
+//Edit som gör det möjligt att ändra en entry, beroende på om man klickar på en income eller expense li.
 
 function editEntry(entry){
     let ENTRY = ENTRY_LIST[entry.id];
@@ -97,7 +102,7 @@ function editEntry(entry){
     deleteEntry(entry);
 }
 
-
+//UpdateUi som räknar alla totaler och uppdaterar deras divar.
 function updateUI(){
     income = calculateTotal("income", ENTRY_LIST);
     outcome = calculateTotal("expense", ENTRY_LIST);
@@ -135,6 +140,7 @@ function updateUI(){
     localStorage.setItem("entry_list", JSON.stringify(ENTRY_LIST));
 }
 
+//Function för att visa ett item med delete och edit knapp
 function showEntry(list, type, title, amount, id) {
 
     const entry =  ` <li id = "${id}" class="${type}">
@@ -181,4 +187,3 @@ function clearInput(inputs) {
 }
 
 
-addBtn.addEventListener("click", budget);
