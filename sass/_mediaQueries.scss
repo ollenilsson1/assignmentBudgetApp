@@ -1,0 +1,58 @@
+/* Media queries för att få sidan responsive */
+
+@media screen and (max-width: 780px) {
+    h2 {
+        font-size: 1.6rem;
+    }
+    #h1_total {
+        font-size:2rem;
+    }
+
+    .expense-p , .income-p {
+        font-size: 0.9rem;
+    }
+
+    #expense_total {
+        font-size: 0.9rem;
+    } 
+    
+    #income_total {
+        font-size: 0.9rem;
+    }
+
+    #edit {
+        position: absolute;
+        top:0;
+        right:0%;
+    
+    }
+    
+    #delete {
+        position: absolute;
+        top:0;
+        right:16%;
+        
+    }
+
+    .background-container {
+        height:65vh;
+     
+    }
+
+}
+
+@media screen and (max-width: 430px) {
+    #h1_total {
+        font-size:1.5rem;
+    }
+
+    #add_select {
+        width:15%;
+    }
+
+    .background-container {
+        height:70vh;
+     
+    }
+
+}

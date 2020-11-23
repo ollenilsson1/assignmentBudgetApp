@@ -1,0 +1,38 @@
+/*för total presentationen*/
+
+.result_container {
+    background-image: url("images/header-big.jpg");
+    background-position:center;
+    background-size:cover;
+    display:flex;
+    justify-content: center;
+    padding:10%;
+    margin-bottom: 1px;
+    border:1px solid black;
+    
+}
+
+.total {
+    display:flex;
+    flex-direction: column;
+}
+
+#total_result {
+    text-align: center;
+    
+}
+
+#h1_total {
+font-size: 4rem;
+font-weight: 900;
+letter-spacing: 0.2rem;
+text-transform: uppercase;
+color:whitesmoke;
+text-shadow: 1px 1px 1px black,
+2px 3px 1px black;}
+
+#total_result {
+font-size: 3.3rem;
+color:whitesmoke;
+text-shadow: 1px 1px 1px black,
+2px 3px 1px black;}

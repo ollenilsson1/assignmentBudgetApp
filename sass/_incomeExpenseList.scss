@@ -1,0 +1,33 @@
+/* inkomster och utgifter divar */
+
+
+.income_expenses {
+    position:relative;
+    display:flex;
+    overflow:scroll;
+    overflow-y: auto;
+    overflow-x: hidden;
+    justify-content: space-around;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+    height: 45vh;
+}
+.list {
+    list-style-type: none;
+}
+
+.income , .expense {
+    position:relative;   
+}
+
+#edit {
+    position: absolute;
+    top:0;
+    right:3%;
+}
+
+#delete {
+    position: absolute;
+    top:0;
+    right:15%;
+}

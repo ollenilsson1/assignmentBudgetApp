@@ -1,0 +1,23 @@
+{
+  "name": "testBudgetApp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node-sass sass/main.scss style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ollenilsson1/assignmentBudgetApp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ollenilsson1/assignmentBudgetApp/issues"
+  },
+  "homepage": "https://github.com/ollenilsson1/assignmentBudgetApp#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

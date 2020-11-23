@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+    color: #404040;
+}
+
+body {
+    background-color: #333;
+}
+
+
+
+
+h2 {
+    font-size: 2.3rem;
+    font-weight: 100;
+    text-decoration: underline;
+    text-transform: uppercase;
+    padding-bottom: 5%;
+  
+}
+
+
+.expense-p {
+    color:rgb(177, 3, 3);
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.income-p {
+    color:rgb(1, 105, 1);
+    font-size: 1.2rem;
+    font-weight: 400;
+    
+}
+
+
+
+/* för att få det att se ut som ett nyhetsbrev som ser bra ut på stora skärmar
+max-width är 900px sen går den över till 80% av sidan */
+
+.wrapper {
+    width: 80%;
+    max-width: 900px;
+    margin: auto;
+    background-color:#f7f7f7;
+}
+
+.background-container {
+   height:70vh;
+
+}

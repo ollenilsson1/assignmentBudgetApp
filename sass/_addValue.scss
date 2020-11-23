@@ -1,0 +1,97 @@
+/* add value container and inputs */
+
+.add_value_container {
+    padding:3%;
+    display:flex;
+    justify-content: space-around;
+    background-color:#f7f7f7;
+
+}
+
+#add_select {
+    border: 1px solid #e7e7e7;
+    background-color: #fff;
+    text-align: center;
+    font-size: 1.4rem;
+    width:10%;
+    height:2rem;
+}
+
+#add_text {
+    border: 1px solid #e7e7e7;
+    background-color: #fff;
+    padding-left: 1%;
+    width:40%;
+    height:2rem;
+    
+}
+
+#add_amount {
+    border: 1px solid #e7e7e7;
+    background-color: #fff;
+    padding-left: 1%;
+    width:30%;
+    height:2rem;
+}
+
+/* För att ta bort styling på "add_amount"-fältet */
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* submit och delete knappen */
+
+.submit_delete_value {
+    padding-bottom: 2%;
+    display:flex;
+    justify-content: center;
+    background-color:#f7f7f7;
+}
+
+
+ #submit {
+    color: #404040 !important;
+    text-transform: uppercase;
+    background: #f7f7f7;
+    padding: 12px;
+    margin-right: 1%;
+    border: 2px solid #757575 !important;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+    }
+
+#submit:hover {
+    color: #494949 !important;
+    border-radius: 0px;
+    border-color: #000000 !important;
+    transition: all 0.3s ease 0s;
+    }
+
+#deleteAll {
+    color: #404040 !important;
+    text-transform: uppercase;
+    background: #f7f7f7;
+    padding: 12px;
+    margin-left:1%;
+    border: 2px solid #757575 !important;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+    }
+
+#deleteAll:hover {
+    color: #494949 !important;
+    border-radius: 0px;
+    border-color: #000000 !important;
+    transition: all 0.3s ease 0s;
+    }
