@@ -8,7 +8,7 @@
         font-size:2rem;
     }
 
-    .expense-p , .income-p {
+    .entry {
         font-size: 0.9rem;
     }
 
@@ -23,14 +23,14 @@
     #edit {
         position: absolute;
         top:0;
-        right:0%;
+        right:-32%;
     
     }
     
     #delete {
         position: absolute;
         top:0;
-        right:16%;
+        right:-15%;
         
     }
 
@@ -40,6 +40,29 @@
     }
 
 }
+
+
+@media screen and (max-width: 525px) {
+    .entry {
+        font-size: 0.7rem;
+    }
+   
+    #edit {
+        position: absolute;
+        top:0;
+        right:-10%;
+    
+    }
+    
+    #delete {
+        position: absolute;
+        top:0;
+        right:7%;
+        
+    }
+
+}
+
 
 @media screen and (max-width: 430px) {
     #h1_total {

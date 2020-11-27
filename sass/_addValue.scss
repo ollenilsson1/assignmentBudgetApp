@@ -50,7 +50,7 @@ input[type=number] {
 
 /* submit och delete knappen */
 
-.submit_delete_value {
+.submit_button {
     padding-bottom: 2%;
     display:flex;
     justify-content: center;
@@ -71,25 +71,6 @@ input[type=number] {
     }
 
 #submit:hover {
-    color: #494949 !important;
-    border-radius: 0px;
-    border-color: #000000 !important;
-    transition: all 0.3s ease 0s;
-    }
-
-#deleteAll {
-    color: #404040 !important;
-    text-transform: uppercase;
-    background: #f7f7f7;
-    padding: 12px;
-    margin-left:1%;
-    border: 2px solid #757575 !important;
-    border-radius: 6px;
-    display: inline-block;
-    transition: all 0.3s ease 0s;
-    }
-
-#deleteAll:hover {
     color: #494949 !important;
     border-radius: 0px;
     border-color: #000000 !important;

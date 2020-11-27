@@ -110,7 +110,7 @@ input[type=number] {
   -moz-appearance: textfield; }
 
 /* submit och delete knappen */
-.submit_delete_value {
+.submit_button {
   padding-bottom: 2%;
   display: flex;
   justify-content: center;
@@ -128,23 +128,6 @@ input[type=number] {
   transition: all 0.3s ease 0s; }
 
 #submit:hover {
-  color: #494949 !important;
-  border-radius: 0px;
-  border-color: #000000 !important;
-  transition: all 0.3s ease 0s; }
-
-#deleteAll {
-  color: #404040 !important;
-  text-transform: uppercase;
-  background: #f7f7f7;
-  padding: 12px;
-  margin-left: 1%;
-  border: 2px solid #757575 !important;
-  border-radius: 6px;
-  display: inline-block;
-  transition: all 0.3s ease 0s; }
-
-#deleteAll:hover {
   color: #494949 !important;
   border-radius: 0px;
   border-color: #000000 !important;
@@ -171,12 +154,12 @@ input[type=number] {
 #edit {
   position: absolute;
   top: 0;
-  right: 3%; }
+  right: -21%; }
 
 #delete {
   position: absolute;
   top: 0;
-  right: 15%; }
+  right: -10%; }
 
 /* footer med income total och expense total */
 footer {
@@ -199,7 +182,7 @@ footer {
     font-size: 1.6rem; }
   #h1_total {
     font-size: 2rem; }
-  .expense-p, .income-p {
+  .entry {
     font-size: 0.9rem; }
   #expense_total {
     font-size: 0.9rem; }
@@ -208,13 +191,25 @@ footer {
   #edit {
     position: absolute;
     top: 0;
-    right: 0%; }
+    right: -32%; }
   #delete {
     position: absolute;
     top: 0;
-    right: 16%; }
+    right: -15%; }
   .background-container {
     height: 65vh; } }
+
+@media screen and (max-width: 525px) {
+  .entry {
+    font-size: 0.7rem; }
+  #edit {
+    position: absolute;
+    top: 0;
+    right: -10%; }
+  #delete {
+    position: absolute;
+    top: 0;
+    right: 7%; } }
 
 @media screen and (max-width: 430px) {
   #h1_total {
